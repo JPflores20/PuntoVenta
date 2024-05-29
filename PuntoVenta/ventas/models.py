@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 class Cliente (models.Model):
     codigo = models.CharField(max_length=255, null = True, blank=True)
-    nombre= models.CharField(max_length=255,  null = True, blank=True)
-    telefono= models.CharField(max_length=255,  null = True, blank=True)
+    nombre= models.CharField(max_length=255,  null = True, blank=False)
+    telefono= models.CharField(max_length=255,  null = True, blank=False)
     created= models.DateTimeField(auto_now_add=True)
     update= models.DateTimeField(auto_now_add=True)
 
